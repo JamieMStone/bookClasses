@@ -1,21 +1,5 @@
-class Book {
-    constructor(title, author, latestEdition = 1){
-        this.title = title;
-        this.author = author.name;
-        this.latestEdition = latestEdition;
-    }
-
-    newEdition(){
-        this.latestEdition++;
-    }
-}
-
-class Author {
-    constructor(name, yearOfBirth){
-        this.name = name;
-        this.yearOfBirth = yearOfBirth;
-    }
-}
+const Author = require("./Author");
+const Book = require("./Book");
 
 console.log("Running - bookClasses.js");
 
